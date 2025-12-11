@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>반응형 자기소개 - 동적 효과</title>
+    <title>반응형 자기소개 - 권하일</title>
     
     <style>
         /* 기본 스타일 (모바일 우선) */
@@ -93,6 +93,7 @@
             border-radius: 50%;
             margin: 0 auto 15px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            /* 이미지 배경을 넣고 싶다면 여기에 background-image: url('path/to/image.jpg'); 추가 */
         }
 
         .skills h2 {
@@ -199,8 +200,7 @@
     <div id="particle-container"></div>
     
     <header class="header">
-        <h1>이름</h1>
-        <p id="typing-text">직업/역할</p>
+        <h1>권하일</h1> <p id="typing-text">직업/역할</p>
     </header>
 
     <main class="container">
@@ -209,8 +209,7 @@
                 </div>
             <div>
                 <h2>저는...</h2>
-                <p>간단한 자기소개 문구입니다. 무엇을 하는 사람인지, 어떤 목표를 가지고 있는지 설명합니다. 이 텍스트는 태블릿/데스크톱에서 이미지 옆에 배치됩니다.</p>
-            </div>
+                <p>1학년을 거의 다 마쳐가는 대학생입니다. 인공지능과 소프트웨어 분야의 기본기를 다지며 성장을 기대하고 있습니다.</p> </div>
         </section>
 
         <section class="skills">
@@ -221,29 +220,26 @@
 
         <section class="contact">
             <h2>연락처</h2>
-            <p>이메일: <a href="mailto:email@example.com">email@example.com</a></p>
-            <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
-        </section>
+            <p>이메일: <a href="mailto:gkdlf56890@naver.com">gkdlf56890@naver.com</a></p> <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p> </section>
     </main>
 
     <footer class="footer">
-        <p>&copy; 2025 이름. All rights reserved.</p>
-    </footer>
+        <p>&copy; 2025 권하일. All rights reserved.</p> </footer>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             // ------------------------------------------
-            // 1. 보유 기술 목록 동적 생성
+            // 1. 보유 기술 목록 동적 생성 (AI/SW 1학년에게 적합한 기술)
             // ------------------------------------------
             const skillsData = [
+                "Python",
+                "C/C++",
                 "HTML5",
                 "CSS3",
-                "JavaScript (ES6+)",
-                "React",
-                "Node.js",
-                "Git/GitHub",
-                "Responsive Design",
-                "UI/UX Focus"
+                "JavaScript",
+                "알고리즘 기초",
+                "컴퓨터 과학 이해",
+                "문제 해결 능력"
             ];
 
             const skillList = document.getElementById('skill-list');
@@ -266,7 +262,12 @@
             // 2. 타이핑 애니메이션 (헤더 텍스트 순환)
             // ------------------------------------------
             const typingElement = document.getElementById('typing-text');
-            const roles = ["웹 개발자", "프론트엔드 엔지니어", "반응형 디자인 전문가", "문제 해결사"];
+            // 사용자 요청 기반으로 롤 목록 구성
+            const roles = [
+                "한신대 AI.SW계열 대학생", 
+                "인공지능을 배우는 개발자", 
+                "새로운 기술을 탐구하는 사람"
+            ]; 
             let roleIndex = 0;
             let charIndex = 0;
 
